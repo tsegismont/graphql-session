@@ -1,0 +1,13 @@
+type Query {
+  userPrefs: [String!]
+}
+
+type Mutation {
+  login(user: String!, password: String): Boolean
+  logout: Boolean
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
